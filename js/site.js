@@ -69,7 +69,7 @@ var filteredEvents = eventsArray;
 function buildDropDown() {
     var eventDD = document.getElementById("eventDropDown");
 
-    let distinctEvents = [...new Set(eventsArray.map((event) => event.city))];
+    let distinctEvents = [...new Set(filteredEvents.map((event) => event.city))];
 
     let linkHTMLEnd = `<div class="dropdown-divider"></div><a class="dropdown-item" onclick="getEvents(this)" data-string="All">All</a>`;
     let resultsHTML = "";
@@ -91,13 +91,14 @@ function getEvents(element) {
     filteredEvents = curEvents;
     document.getElementById("statsHeader").innerHTML = `Stats For ${city} Events`;
 
-    if (city != "All"); {
+    if (city != "All") {
         filteredEvents = curEvents.filter(function (event) {
             if (event.city == city) {
                 return event;
             }
         });
     }
+
     displayStats();
 }
 
@@ -133,6 +134,8 @@ function displayStats() {
         }
     );
 }
+
+
 
 
 //Start of Bottom Data Table

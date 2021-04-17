@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Shawna Russell</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/img/favicon.png" rel="icon">
+    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/ionicons.min.css" rel="stylesheet">
+    <link href="/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="/css/venobox.min.css" rel="stylesheet">
+    <link href="/css/devicon.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css" rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: DevFolio - v2.4.1
+  * Template URL: //bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: //bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body onload="buildDropDown()">
+
+    <!-- ======= Header/ Navbar ======= -->
+    <header>
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll" href="#page-top">Shawna Russell</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll" href="index.html" target="_blank">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="app.html" target="_blank">The App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll" href="code.html" target="_blank">See the Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll" href="Placeholder" target="_blank">Get the
+                                Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll" href="contact.html" target="_blank">Contact the Developer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======= Intro Section ======= -->
+    <div id="home" class="intro route bg-image" style="background-image: url(/img/intro-bg.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <!--<p class="display-6 color-d">Hello, world!</p>-->
+                    <h1 class="intro-title mb-4">Super Dog Events</h1>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Intro Section -->
+
+    <!--START MAIN SECTION-->
+    <main>
+        <section id="about" class="about-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col =-sm-6">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary">Pick a Location</button>
+                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div id="eventDropDown" class="dropdown-menu">
+                                <!--Template for Dropdown-->
+                            </div>
+                        </div>
+                        <table class="table table-striped">
+                            <tr>
+                                <th colspan="2" id="statsHeader">Stats For All Events</th>
+                            </tr>
+                            <tr>
+                                <td>Total Attendance</td>
+                                <td id="total">100</td>
+                            </tr>
+                            <tr>
+                                <td>Average Attendance</td>
+                                <td id="average">100</td>
+                            </tr>
+                            <tr>
+                                <td>Most Attended</td>
+                                <td id="most">100</td>
+                            </tr>
+                            <tr>
+                                <td>Least Attended</td>
+                                <td id="least">100</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-6 order-first order-md-2">
+                        <img src="/img/SDEventsLogo.png" class="img-fluid p-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                        data-target="#addEventData">Add
+                                        New Event
+                                    </button>
+                                    <hr>
+                                    <table class="table table-striped" id="events">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>Event</th>
+                                                <th>City</th>
+                                                <th>State</th>
+                                                <th>Attendance</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="resultsBody">
+                                            <!--DATA GOES HERE-->
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5"></div>
+        </section>
+    </main>
+    <!-- END MAIN SECTION -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>Shawna Russell</strong>. All Rights Reserved</p>
+                        <div class="credits">
+                            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: //bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: //bootstrapmade.com/buy/?theme=DevFolio
+            -->
+                            Designed by <a href="https://bootstrapmade.com/" target="blank">BootstrapMade Customized by
+                                Shawna Russell</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <!--START TEMPLATE SECTION-->
+    <template id="Data-Template">
+        <tr>
+            <td id="name"></td>
+            <td id="city"></td>
+            <td id="state"></td>
+            <td id="attendance"></td>
+            <td id="date"></td>
+        </tr>
+    </template>
+    <!--END TEMPLATE SECTION-->
+
+    <!-- Modal Section -->
+    <div class="modal" id="addEventData">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add a New Event</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="newEventForm">
+                        <div class="form-group">
+                            <label for="newEventName">Event</label>
+                            <input type="text" class="form-control" id="newEventName" placeholder="New Event Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventCity">City</label>
+                            <input type="text" class="form-control" id="newEventCity" placeholder="New Event City">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventState">State</label>
+                            <input type="text" class="form-control" id="newEventState" placeholder="New Event State">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventAttendance">Attendance</label>
+                            <input type="text" class="form-control" id="newEventAttendance"
+                                placeholder="New Event Attendance">
+                        </div>
+                        <div class="form-group">
+                            <label for="newEventDate">Date</label>
+                            <input type="date" class="form-control" id="newEventDate" placeholder="New Event Date">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="saveEventData()" data-dismiss="modal"
+                        style="background-color:rgb(16, 143, 143)">Save
+                        New Event</button>
+                    <button type="button" class="btn btn-secondary" style="background-color:rgb(104, 107, 107)"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Modal Section -->
+
+    <!--Return to Top-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/jquery.counterup.min.js"></script> -->
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/typed.min.js"></script>
+    <script src="/js/venobox.min.js"></script>
+    <!--Devicon-->
+
+    <!-- Template Main JS File -->
+    <script src="/js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('user_0fkULf6pFYULOJbXdbwVw')
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/js/site.js"></script>
+
+    <!--Stock images courtesy of Unsplash.com-->
+
+</body>
+
+</html>

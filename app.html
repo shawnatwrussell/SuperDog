@@ -73,40 +73,26 @@
         </nav>
     </header>
 
-    <!-- ======= Intro Section ======= -->
-    <div id="home" class="intro route bg-image" style="background-image: url(/img/intro-bg.jpg)">
-        <div class="overlay-itro"></div>
-        <div class="intro-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <h1 class="intro-title mb-4">Super Dog Events</h1>
-                    <!--SCROLL DOWN-->
-                    <a class="scroll-down" size="small"><i class="fa fa-chevron-down"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Intro Section -->
-
     <!--START MAIN SECTION-->
     <main>
-        <section id="about" class="about-mf sect-pt4 route">
-            <div class="container">
-                <div class="row">
-                    <div class="col =-sm-6">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-secondary">Pick a Location</button>
-                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div id="eventDropDown" class="dropdown-menu">
-                                <!--Template for Dropdown-->
-                            </div>
+        <div class="container-fluid pt-5 mt-5">
+            <div class="row mt-5">
+                <div class="col-sm-5">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary">Pick a Location</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div id="eventDropDown" class="dropdown-menu">
+                            <!--Template for Dropdown-->
                         </div>
+                    </div>
+                    <div class="card-body shadow p-3 mb-5 bg-white rounded">
                         <table class="table table-striped">
                             <tr>
-                                <th colspan="2" id="statsHeader">Stats For All Events</th>
+                                <th colspan="2" id="statsHeader" style="background-color: rgb(203, 211, 228);">
+                                    Stats For All Events</th>
                             </tr>
                             <tr>
                                 <td>Total Attendance</td>
@@ -126,43 +112,43 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-sm-6 order-first order-md-2">
-                        <img src="/img/SDEventsLogo.png" class="img-fluid p-2">
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="box-shadow-full">
-                            <div class="row">
-                                <div class="col">
-                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                        data-target="#addEventData">Add
-                                        New Event
-                                    </button>
-                                    <hr>
-                                    <table class="table table-striped" id="events">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Event</th>
-                                                <th>City</th>
-                                                <th>State</th>
-                                                <th>Attendance</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="resultsBody">
-                                            <!--DATA GOES HERE-->
-                                        </tbody>
-                                    </table>
-
-                                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <img src="/img/SDEventsLogo.png" class="img-fluid" style="width:50;height:100">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#addEventData">Add
+                                    New Event
+                                </button>
+                                <hr>
+                                <table class="table table-striped" id="events">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Event</th>
+                                            <th>City</th>
+                                            <th>State</th>
+                                            <th>Attendance</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="resultsBody">
+                                        <!--DATA GOES HERE-->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container mt-5"></div>
-        </section>
+        </div>
+        <div class="container mt-5"></div>
     </main>
     <!-- END MAIN SECTION -->
 
